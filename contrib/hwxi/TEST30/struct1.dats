@@ -120,7 +120,7 @@ main0 () = {
   val () = vbar.p := addr@vfoo
 //
   val pfoo = $UN.castvwtp0{aPtr1(struct_foo)}(addr@vfoo)
-  val pbar = $UN.castvwtp0{aPtr1(struct_foo)}(addr@vbar)
+  val pbar = $UN.castvwtp0{aPtr1(struct_bar)}(addr@vbar)
 //
   val () =
   println! ("foo.x = ", pfoo.x())
